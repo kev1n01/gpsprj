@@ -1,1 +1,1 @@
-web: python manage.py makemigrations api && python manage.py migrate && gunicorn mysite.wsgi
+web: python manage.py makemigrations api && python manage.py migrate && gunicorn gpsprj.wsgi
