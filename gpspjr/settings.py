@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-udj#vm*v8546f+c557s8u-pifjy_ox^8h7u6)wv+*35oc7!cj#'
@@ -84,5 +84,5 @@ USE_L10N = False
 USE_TZ = False
 
 STATIC_URL = 'static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
