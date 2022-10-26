@@ -1,0 +1,8 @@
+from django.urls import path
+from .views import DriverList, Login, StudentFilterApiView
+
+urlpatterns = [
+    path('driver', DriverList.as_view(), name="driver_list"),
+    path('login',Login.as_view(),name='login'),
+    path('studentfilter',StudentFilterApiView.as_view())
+]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
